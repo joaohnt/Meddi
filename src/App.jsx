@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import logo from '../logo.png'
 
 const initialRows = [
   { value: '', frequency: '' },
@@ -81,5 +82,5 @@ function FrequencyTable() {
 }
 
 export default function App() {
-  return <><header className="hero"><nav><img className="brand" src="/logo.png" alt="MEDICI" /><a href="#dados-brutos">Dados brutos</a><a href="#tabela-frequencia">Tabela de frequência</a></nav><div className="hero-banner"><div className="banner-image"><a className="banner-link raw-link" href="#dados-brutos"><span>Dados brutos</span></a><a className="banner-link table-link" href="#tabela-frequencia"><span>Tabela de frequência</span></a></div></div></header><main><RawData /><div className="frequency-strip"><FrequencyTable /></div></main><footer>Medidas de Posição Central · Estatística</footer></>
+  return <><header className="hero"><nav><img className="brand" src={logo} alt="MEDICI" /><a href="#dados-brutos">Dados brutos</a><a href="#tabela-frequencia">Tabela de frequência</a></nav><div className="hero-banner"><div className="banner-image"><a className="banner-link raw-link" href="#dados-brutos"><span>Dados brutos</span></a><a className="banner-link table-link" href="#tabela-frequencia"><span>Tabela de frequência</span></a></div></div></header><main><RawData /><div className="frequency-strip"><FrequencyTable /></div></main><footer>Medidas de Posição Central · Estatística</footer></>
 }
